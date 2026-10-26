@@ -1,0 +1,63 @@
+:root {
+/*Variables couleurs principales du site*/
+  --couleur-principale: #4C2365;
+  --couleur-secondaire: #C4A4DA;
+  --couleur-cadre-compteur: #FBF6F6;
+  --couleur-texte:  #FBF6F6;
+  --couleur-taches-reportees: #FF6082;
+
+/*Variables polices du site*/
+  --police-titre:"Bungee", sans-serif;
+  --police-motivation:"Dancing Script", cursive;
+  --police-texte:"Montserrat", sans-serif;
+
+/*variables taille de texte*/
+  --taille-police-titre: 70px;
+  --taille-police-motivation: 35px;
+  --taille-police-texte:20px;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*CSS de la page*/
+.fond-body{
+    background-color: var(--couleur-principale);
+}
+.titre{
+    font-size: var(--taille-police-titre);
+    font-family: var(--police-titre);
+    color: var(--couleur-secondaire);
+    text-align: center;
+    text-transform: uppercase;
+}
+.motivation{
+    font-family: var(--police-motivation);
+    font-size: var(--taille-police-motivation);
+    color: var(--couleur-texte);
+    text-align: center;
+}
+ /*CSS Barre latérale gauche*/  
+aside{
+    background-color: var(--couleur-secondaire);
+}
+.titre-aside{
+    font-size: var(--taille-police-motivation);
+    color: var(--couleur-principale);
+}
+ul,li{
+    color: var(--couleur-principale);
+    font-size: var(--taille-police-texte);
+}
+p{
+    color: var(--couleur-texte);
+    font-family: var(--police-texte);
+    font-size: var(--taille-police-texte);
+    text-align: center;
+}
+.compteur{
+    background-color: var(--couleur-cadre-compteur);                                                
+    
+    font-family: var(--police-texte);
+    font-size: var(--taille-police-texte);
+    color: var(--couleur-principale);
+}
+

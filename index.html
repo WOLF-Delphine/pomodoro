@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pomodoro</title>
+
    <!--Téléchargement police GoogleFonts titre-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    link href="https://fonts.googleapis.com/css2?family=Playwrite+AR+Guides&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR+Guides&display=swap" rel="stylesheet">  
+    
+    <!--Téléchargement police GoogleFonts texte de motivation-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
     <!--Téléchargement police GoogleFonts texte classique-->
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <!--lien vers la page CSS-->
      <link rel="stylesheet" href="./style.css">
 </head>
 
+<!------------------------------------------------------------------------------------------------------------------>
+
 <body class="fond-body">
     <header>
+        <!--Titre principal-->
         <h1 class="titre">pomodoro</h1>
         <!--Phrase dynamique qui changera chaque jour-->
-        <h2 id="phrase-motivation">Phrase du jour </h2>
+        <h2 class="motivation" id="phrase-motivation">Phrase du jour </h2>
     </header>
-    
+    <!--Panneau vertical gauche-->
     <aside>
-        <h2>Tâches du jour</h2>
+        <h3 class="titre-aside">Tâches du jour</h3>
         <!--Tâches dynamiques qui changera réguliérement, en fonction des tâches cochées-->
         <ul>
             <li>
@@ -43,18 +51,26 @@
 
    
     <main>
-        <p id="explication_tache">Paragraphe expliquant la tâche en cours et l indication de la phrase???</p>
+        <!--Affichage de la tâche en cours -->
+        <p id="explication-tache">Aucune tâche sélectionnée</p>
+        <!--Indication période concernée: travail-pause-->
+        <p id="phase">Travail</p>
+
          <!--chronométre-->
-        <div id="unité-minutes"></div>
-        <div id="dizaine-minutes"></div>
-        <div>:</div>
-        <div id="unité-secondes"></div> 
-        <div id="dizaine-secondes"></div> 
-        
+        <div class="compteur">
+            <div class="cadre" id="dizaine-minutes">1</div>
+            <div class="cadre" id="unite-minutes">2</div>
+            <div class="cadre">:</div>
+            <div class="cadre" id="dizaine-secondes">3</div> 
+            <div class="cadre" id="unite-secondes">0</div> 
+        </div>
+
         <!--Boutons-->
-        <button>DEMARRER</button>
-        <button>PAUSE</button>
-        <button>REINITIALISER</button>
+        <div class="boutons">
+            <button type="button" id="btn-demarrer">DEMARRER</button>
+            <button type="button" id="btn-pause">PAUSE</button>
+            <button type="button" id="btn-reinitialiser">REINITIALISER</button>
+        </div>
     </main>
   
     
