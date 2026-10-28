@@ -22,13 +22,18 @@
 /*-----------------------------------------------------------------------------------------------------------*/
 
 /*CSS de la page*/
-.fond-body{
+.menu{
+  background-color: var(--couleur-secondaire);
+  color: var(--couleur-principale);
+}
+.header{
     background-color: var(--couleur-principale);
+    font-size: 16px;
 }
 .titre{
     font-size: var(--taille-police-titre);
     font-family: var(--police-titre);
-    color: var(--couleur-secondaire);
+    color: var(--couleur-principale);
     text-align: center;
     text-transform: uppercase;
 }
@@ -39,8 +44,10 @@
     text-align: center;
 }
  /*CSS Barre latérale gauche*/  
-aside{
-    background-color: var(--couleur-secondaire);
+.aside{
+    background-color: var(--couleur-aside);
+    width:360px ;
+    height: 864px;
 }
 .titre-aside{
     font-size: var(--taille-police-motivation);
@@ -56,11 +63,20 @@ p{
     font-size: var(--taille-police-texte);
     text-align: center;
 }
+.chrono{
+  background-color: var(--couleur-taches-reportees);
+  width: 651px;
+  height: 459px;
+}
 .compteur{
-    background-color: var(--couleur-cadre-compteur);                                                
+    background-color: var(--couleur-secondaire);                                                
     
     font-family: var(--police-texte);
     font-size: var(--taille-police-texte);
     color: var(--couleur-principale);
+}
+.boutons{
+  border-radius: 8px;
+  color: var(--couleur-principale);
 }
 

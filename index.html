@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pomodoro</title>
+    <title>ACCUEIL</title>
 
    <!--Téléchargement police GoogleFonts titre-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,24 +22,28 @@
 
 <!------------------------------------------------------------------------------------------------------------------>
 
-<body class="fond-body">
-    <!--Barre de navigation-->
-                                    <!--AJOUTER LES ICONES USER MENU BURGER-->
-    <nav class="menu">
-        <a href="">accueil</a>
-        <a href="">mon agenda</a>
-        <a href="">mes tâches en cours</a>
-        <a href="">historique</a>
-    </nav>
+<body>
     <header>
+    <!--Barre de navigation-->
+        <nav class="menu">
+            <button type="button" class="btn-burger"><img src="./icones/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Ouvrir le menu">
+            </button>
+            
+            <a href="./index.html">accueil</a>
+            <a href="./agenda.html">mon agenda</a>
+            <a href="./tache-en-cours.html">mes tâches en cours</a>
+            <a href="./historique.html">historique</a>
+            <a href="./compte.html"><img src="./icones/person_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Mon compte"></a>
+        </nav>
+    </header>
+<main>
         <!--Titre principal-->
         <h1 class="titre">pomodoro</h1>
-    </header>
 
-    <!--Panneau vertical gauche-->
-    <aside>
-        <h2 class="titre-aside">tâches du jour</h2>
-        <!--Liste à cocher: Tâches dynamiques -->
+        <!--Panneau vertical gauche-->
+<aside class="aside">
+    <h2 class="titre-aside">tâches du jour</h2>
+         <!--Liste à cocher: Tâches dynamiques -->
         <ul>
             <li>
                 <input type="checkbox" id="tache-1">
@@ -54,15 +58,10 @@
                 <label for="tache-3">Créer le compteur</label>   
             </li>
         </ul>              
-    </aside>
+</aside>
 
-    <main>
-        <!--Affichage de la tâche en cours -->
-        <p id="explication-tache">Aucune tâche sélectionnée</p>
-        <!--Indication phase concernée: travail-pause-->
-        <p id="phase">Travail</p>
 
-     <section>   
+    <div class="chrono">   
          <!--chronométre-->
         <div class="compteur">
             <div class="cadre" id="dizaine-minutes">1</div>
@@ -70,20 +69,29 @@
             <div class="cadre">:</div>
             <div class="cadre" id="dizaine-secondes">3</div> 
             <div class="cadre" id="unite-secondes">0</div> 
-            </div>
+        </div>
             <!--Boutons-->
         <div class="boutons">
-            <button type="button" id="btn-demarrer">DEMARRER</button>
-            <button type="button" id="btn-pause">PAUSE</button>
-            <button type="button" id="btn-reinitialiser">REINITIALISER</button>
+            <button type="button" id="btn-demarrer">démarrer</button>
+            <button type="button" id="btn-pause">pause</button>
+            <button type="button" id="btn-reinitialiser">réinitialiser</button>
         </div>
-    </section>
 
+    <!--Affichage de la tâche en cours -->
+        <p id="explication-tache">Aucune tâche sélectionnée</p>
 
+        <!--Indication phase concernée: travail-pause- alt "" si décorative-->
+            <img src="./icones/alarm_30dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <p id="phase">Travail</p>
 
+        <!--VOIR SI ON PEUX CREER UNE ANIMATION HORLOGE-->
 
-        
-    </main>
+        <button type="button">
+        <img src="./icones/rule_settings_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Paramètres">
+        </button>
+    </div>
+
+</main>
   
     
 
