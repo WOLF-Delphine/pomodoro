@@ -23,16 +23,23 @@
 <!------------------------------------------------------------------------------------------------------------------>
 
 <body class="fond-body">
+    <!--Barre de navigation-->
+                                    <!--AJOUTER LES ICONES USER MENU BURGER-->
+    <nav class="menu">
+        <a href="">accueil</a>
+        <a href="">mon agenda</a>
+        <a href="">mes tâches en cours</a>
+        <a href="">historique</a>
+    </nav>
     <header>
         <!--Titre principal-->
         <h1 class="titre">pomodoro</h1>
-        <!--Phrase dynamique qui changera chaque jour-->
-        <h2 class="motivation" id="phrase-motivation">Phrase du jour </h2>
     </header>
+
     <!--Panneau vertical gauche-->
     <aside>
-        <h3 class="titre-aside">Tâches du jour</h3>
-        <!--Tâches dynamiques qui changera réguliérement, en fonction des tâches cochées-->
+        <h2 class="titre-aside">tâches du jour</h2>
+        <!--Liste à cocher: Tâches dynamiques -->
         <ul>
             <li>
                 <input type="checkbox" id="tache-1">
@@ -49,13 +56,13 @@
         </ul>              
     </aside>
 
-   
     <main>
         <!--Affichage de la tâche en cours -->
         <p id="explication-tache">Aucune tâche sélectionnée</p>
-        <!--Indication période concernée: travail-pause-->
+        <!--Indication phase concernée: travail-pause-->
         <p id="phase">Travail</p>
 
+     <section>   
          <!--chronométre-->
         <div class="compteur">
             <div class="cadre" id="dizaine-minutes">1</div>
@@ -63,14 +70,19 @@
             <div class="cadre">:</div>
             <div class="cadre" id="dizaine-secondes">3</div> 
             <div class="cadre" id="unite-secondes">0</div> 
-        </div>
-
-        <!--Boutons-->
+            </div>
+            <!--Boutons-->
         <div class="boutons">
             <button type="button" id="btn-demarrer">DEMARRER</button>
             <button type="button" id="btn-pause">PAUSE</button>
             <button type="button" id="btn-reinitialiser">REINITIALISER</button>
         </div>
+    </section>
+
+
+
+
+        
     </main>
   
     

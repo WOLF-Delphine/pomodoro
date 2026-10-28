@@ -1,10 +1,13 @@
 :root {
 /*Variables couleurs principales du site*/
+/*Header et certains texte*/
   --couleur-principale: #4C2365;
-  --couleur-secondaire: #C4A4DA;
-  --couleur-cadre-compteur: #FBF6F6;
-  --couleur-texte:  #FBF6F6;
-  --couleur-taches-reportees: #FF6082;
+/*Cadre compteur et certains texte*/
+  --couleur-secondaire: #FEFAF3;
+/*Fond de l'aside "Gauche"*/
+  --couleur-aside: #F2A900;
+/*Encadrement compteur et tâches reportées*/ 
+  --couleur-taches-reportees: #FF7070;
 
 /*Variables polices du site*/
   --police-titre:"Bungee", sans-serif;
@@ -13,8 +16,8 @@
 
 /*variables taille de texte*/
   --taille-police-titre: 70px;
-  --taille-police-motivation: 35px;
-  --taille-police-texte:20px;
+  --taille-police-motivation: 24px;
+  --taille-police-texte:16px;
 }
 /*-----------------------------------------------------------------------------------------------------------*/
 
