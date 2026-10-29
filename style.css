@@ -107,18 +107,26 @@ main {
   flex: 1;
 }
 .citation {
-  background-color: #4c2365;
-  width: 972px;
-  height: 94px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--couleur-violet);
+  border-radius: 8px;
+  padding: 24px 32px;
+  width:fit-content;
+  margin: 48px auto;
 }
 .citation p {
+  margin: 0;
   color: var(--couleur-blanc);
   font-family: var(--police-texte);
   font-size: var(--taille-police-texte);
   text-align: center;
+
 }
-.auteur{
+.citation .auteur{
   font-weight: bold;
+  font-size: 14px;
 }
 .chrono {
   background-color: var(--couleur-blanc);
