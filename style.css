@@ -153,3 +153,16 @@ main {
   font-family: var(--police-titre);
   font-size: 80px;
 }
+.ligne-phase {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.ligne-phase button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.ligne-phase p{
+ margin: 0;
+}
