@@ -1,107 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pomodoro - Accueil</title>
 
-   <!--Téléchargement police GoogleFonts titre-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR+Guides&display=swap" rel="stylesheet">  
-    
+    <!--Téléchargement police GoogleFonts titre-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+AR+Guides&display=swap"
+      rel="stylesheet"
+    />
+
     <!--Téléchargement police GoogleFonts texte de motivation-->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
 
     <!--Téléchargement police GoogleFonts texte classique-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <!--lien vers la page CSS-->
-     <link rel="stylesheet" href="./style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<!------------------------------------------------------------------------------------------------------------------>
-<body>
+    <!--lien vers la page CSS-->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <!------------------------------------------------------------------------------------------------------------------>
+  <body>
     <!--Entête-->
     <header>
-    <!--Barre de navigation-->
-        <nav class="menu">
-            <button type="button" class="btn-burger"><img src="./icones/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Ouvrir le menu">
-            </button>
-            <div class="liens">
-                <a href="./index.html" aria-current="page">accueil</a>
-                <a href="./agenda.html">mon agenda</a>
-                <a href="./tache-en-cours.html">mes tâches en cours</a>
-                <a href="./historique.html">historique</a>
-            </div>
-                <a href="./compte.html"><img src="./icones/person_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Mon compte"></a>
-        </nav>
+      <!--Barre de navigation-->
+      <nav class="menu">
+        <button type="button" class="btn-burger">
+          <img
+            src="./icones/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+            alt="Ouvrir le menu"
+          />
+        </button>
+        <div class="liens">
+          <a href="./index.html" aria-current="page">accueil</a>
+          <a href="./agenda.html">mon agenda</a>
+          <a href="./tache-en-cours.html">mes tâches en cours</a>
+          <a href="./historique.html">historique</a>
+        </div>
+        <a href="./compte.html"
+          ><img
+            src="./icones/person_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+            alt="Mon compte"
+        /></a>
+      </nav>
     </header>
 
     <!---------------------------------------------------------------------------------------------------------------->
-    <main>  
+    <!--Panneaux verticaux -->
+    <div class="panneaux-verticaux">
+      <aside class="aside">
+        <h2 class="titre-aside">tâches du jour</h2>
+        <!--Liste à cocher: Tâches dynamiques -->
+        <ul>
+          <li>
+            <input type="checkbox" id="tache-1" />
+            <label for="tache-1">Créer les fichiers de base</label>
+          </li>
+          <li>
+            <input type="checkbox" id="tache-2" />
+            <label for="tache-2">Ajouter la structure</label>
+          </li>
+          <li>
+            <input type="checkbox" id="tache-3" />
+            <label for="tache-3">Créer le compteur</label>
+          </li>
+        </ul>
+      </aside>
+
+      <!--contenu principal-->
+      <main>
         <!--Titre principal-->
         <h1 class="titre">pomodoro</h1>
-        <img src="./images/fond-temporaire.jpg" alt="arrière plan">
 
-        <!--Panneaux verticaux -->
-        <div class="panneaux-verticaux">
-    <aside class="aside">
-        <h2 class="titre-aside">tâches du jour</h2>
-         <!--Liste à cocher: Tâches dynamiques -->
-        <ul>
-            <li>
-                <input type="checkbox" id="tache-1">
-                <label for="tache-1">Créer les fichiers de base</label>
-            </li>            
-            <li>
-                <input type="checkbox" id="tache-2">
-                <label for="tache-2">Ajouter la structure</label>
-            </li>
-            <li>
-                <input type="checkbox" id="tache-3">
-                <label for="tache-3">Créer le compteur</label>   
-            </li>
-        </ul>              
-    </aside>
+        <!--Citation et auteur-->
+        <div class="citation">
+          <p>
+            « Ils ne savaient pas que c'était impossible, alors ils l'ont fait.
+            »
+          </p>
+          <p>Mark Twain</p>
+        </div>
 
-
-    <div class="chrono">   
-         <!--chronométre-->
-        <div class="compteur">
+        <!--chronomètre-->
+        <div class="chrono">
+          <!--Affichage de la tâche en cours -->
+          <p id="explication-tache">Aucune tâche sélectionnée</p>
+          <div class="compteur">
             <div class="cadre" id="dizaine-minutes">2</div>
             <div class="cadre" id="unite-minutes">5</div>
             <div class="separateur">:</div>
-            <div class="cadre" id="dizaine-secondes">0</div> 
-            <div class="cadre" id="unite-secondes">0</div> 
-        </div>
-            <!--Boutons-->
-        <div class="boutons">
+            <div class="cadre" id="dizaine-secondes">0</div>
+            <div class="cadre" id="unite-secondes">0</div>
+          </div>
+
+          <!--Indication phase concernée: travail-pause- alt "" si décorative-->
+          <div class="ligne-phase">
+            <img
+              src="./icones/alarm_30dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p id="phase">Travail</p>
+            <button type="button">
+              <img
+                src="./icones/rule_settings_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                alt="Paramètres"
+              />
+            </button>
+            <!--VOIR SI ON PEUX CREER UNE ANIMATION HORLOGE-->
+          </div>
+          <!--Boutons-->
+          <div class="boutons">
             <button type="button" id="btn-demarrer">démarrer</button>
             <button type="button" id="btn-pause">pause</button>
             <button type="button" id="btn-reinitialiser">réinitialiser</button>
+          </div>
         </div>
-
-    <!--Affichage de la tâche en cours -->
-        <p id="explication-tache">Aucune tâche sélectionnée</p>
-
-        <!--Indication phase concernée: travail-pause- alt "" si décorative-->
-            <img src="./icones/alarm_30dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-        <p id="phase">Travail</p>
-
-        <!--VOIR SI ON PEUX CREER UNE ANIMATION HORLOGE-->
-
-        <button type="button">
-        <img src="./icones/rule_settings_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Paramètres">
-        </button>
+      </main>
     </div>
-
-    </main>
-  
-    </div>
-
-
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

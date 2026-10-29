@@ -19,6 +19,9 @@
   --taille-police-motivation: 24px;
   --taille-police-texte:16px;
 }
+*{
+  box-sizing: border-box;
+}
 /*-----------------------------------------------------------------------------------------------------------*/
 
 /*CSS de la page*/
@@ -62,18 +65,36 @@ body{
 }
  /*CSS Barre latérale gauche*/  
 .aside{
-    background-color: var(--couleur-aside);
+    background-color: var(--couleur-jaune);
     width:360px ;
     height: 864px;
+    padding: 32px;
+    font-family: var(--police-texte);
+    font-size: var(--taille-police-texte);
+    color: var(--couleur-violet);
 }
 .titre-aside{
-    font-size: var(--taille-police-motivation);
+    font-size: 20px;
     color: var(--couleur-principale);
     text-transform: uppercase;
+    margin: 0 0 24px 0;
+    text-align: center;
 }
-ul,li{
-    color: var(--couleur-principale);
-    font-size: var(--taille-police-texte);
+.aside ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.aside li{
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 p{
     color: var(--couleur-texte);
