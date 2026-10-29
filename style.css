@@ -117,6 +117,9 @@ main {
   font-size: var(--taille-police-texte);
   text-align: center;
 }
+.auteur{
+  font-weight: bold;
+}
 .chrono {
   background-color: var(--couleur-blanc);
   color: var(--couleur-violet);
@@ -164,5 +167,27 @@ main {
   cursor: pointer;
 }
 .ligne-phase p{
+  color: var(--couleur-violet);
  margin: 0;
 }
+.boutons{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.boutons button{
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-family: var(--police-texte);
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--couleur-blanc);
+  color: var(--couleur-violet);
+  border: 2px solid var(--couleur-violet);
+}
+.boutons .demarrer{
+  background-color: var(--couleur-violet);
+  color: var(--couleur-blanc);
+}
+
