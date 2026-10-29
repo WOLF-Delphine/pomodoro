@@ -59,6 +59,7 @@ body {
 }
 .titre {
   margin: 0;
+  background-color: var(--couleur-violet);
   height: 96px;
   display: flex;
   align-items: center;
@@ -105,6 +106,9 @@ ul {
 }
 main {
   flex: 1;
+  background-image: url(./images/fond-temporaire.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .citation {
   display: flex;
@@ -198,4 +202,3 @@ main {
   background-color: var(--couleur-violet);
   color: var(--couleur-blanc);
 }
-
