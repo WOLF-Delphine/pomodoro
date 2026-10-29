@@ -1,13 +1,13 @@
 :root {
 /*Variables couleurs principales du site*/
 /*Header et certains texte*/
-  --couleur-principale: #4C2365;
+  --couleur-violet: #4C2365;
 /*Cadre compteur et certains texte*/
-  --couleur-secondaire: #FEFAF3;
+  --couleur-blanc: #FFFFFF;
 /*Fond de l'aside "Gauche"*/
-  --couleur-aside: #F2A900;
+  --couleur-jaune: #F2A900;
 /*Encadrement compteur et tâches reportées*/ 
-  --couleur-taches-reportees: #FF7070;
+  --couleur-rose: #FF7070;
 
 /*Variables polices du site*/
   --police-titre:"Bungee", sans-serif;
@@ -15,33 +15,50 @@
   --police-texte:"Montserrat", sans-serif;
 
 /*variables taille de texte*/
-  --taille-police-titre: 70px;
+  --taille-police-titre: 40px;
   --taille-police-motivation: 24px;
   --taille-police-texte:16px;
 }
 /*-----------------------------------------------------------------------------------------------------------*/
 
 /*CSS de la page*/
-.menu{
-  background-color: var(--couleur-secondaire);
-  color: var(--couleur-principale);
+body{
+  background-color: var(--couleur-violet);
 }
-.header{
-    background-color: var(--couleur-principale);
-    font-size: 16px;
+.menu{
+  background-color: var(--couleur-blanc);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 64px;
+}
+.btn-burger{
+  background: none;
+  border: none;
+  cursor:pointer;
+}
+.liens{
+  display: flex;
+  gap: 32px;
+}
+.liens a{
+  color: var(--couleur-violet);
+  text-decoration: none;
+  font-family: var(--police-texte);
+  font-weight: bold;
+  font-size: var(--taille-police-texte);
+  text-transform: uppercase;
+}
+.liens a[aria-current="page"]{
+  text-decoration: underline;
 }
 .titre{
     font-size: var(--taille-police-titre);
     font-family: var(--police-titre);
-    color: var(--couleur-principale);
+    color: var(--couleur-blanc);
     text-align: center;
     text-transform: uppercase;
-}
-.motivation{
-    font-family: var(--police-motivation);
-    font-size: var(--taille-police-motivation);
-    color: var(--couleur-texte);
-    text-align: center;
 }
  /*CSS Barre latérale gauche*/  
 .aside{
@@ -52,6 +69,7 @@
 .titre-aside{
     font-size: var(--taille-police-motivation);
     color: var(--couleur-principale);
+    text-transform: uppercase;
 }
 ul,li{
     color: var(--couleur-principale);
@@ -77,6 +95,5 @@ p{
 }
 .boutons{
   border-radius: 8px;
-  color: var(--couleur-principale);
+  color: var(--couleur-violet);
 }
-

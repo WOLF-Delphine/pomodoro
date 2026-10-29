@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACCUEIL</title>
+    <title>Pomodoro - Accueil</title>
 
    <!--Téléchargement police GoogleFonts titre-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,28 +21,33 @@
 </head>
 
 <!------------------------------------------------------------------------------------------------------------------>
-
 <body>
+    <!--Entête-->
     <header>
     <!--Barre de navigation-->
         <nav class="menu">
             <button type="button" class="btn-burger"><img src="./icones/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Ouvrir le menu">
             </button>
-            
-            <a href="./index.html">accueil</a>
-            <a href="./agenda.html">mon agenda</a>
-            <a href="./tache-en-cours.html">mes tâches en cours</a>
-            <a href="./historique.html">historique</a>
-            <a href="./compte.html"><img src="./icones/person_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Mon compte"></a>
+            <div class="liens">
+                <a href="./index.html" aria-current="page">accueil</a>
+                <a href="./agenda.html">mon agenda</a>
+                <a href="./tache-en-cours.html">mes tâches en cours</a>
+                <a href="./historique.html">historique</a>
+            </div>
+                <a href="./compte.html"><img src="./icones/person_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Mon compte"></a>
         </nav>
     </header>
-<main>
+
+    <!---------------------------------------------------------------------------------------------------------------->
+    <main>  
         <!--Titre principal-->
         <h1 class="titre">pomodoro</h1>
+        <img src="./images/fond-temporaire.jpg" alt="arrière plan">
 
-        <!--Panneau vertical gauche-->
-<aside class="aside">
-    <h2 class="titre-aside">tâches du jour</h2>
+        <!--Panneaux verticaux -->
+        <div class="panneaux-verticaux">
+    <aside class="aside">
+        <h2 class="titre-aside">tâches du jour</h2>
          <!--Liste à cocher: Tâches dynamiques -->
         <ul>
             <li>
@@ -58,16 +63,16 @@
                 <label for="tache-3">Créer le compteur</label>   
             </li>
         </ul>              
-</aside>
+    </aside>
 
 
     <div class="chrono">   
          <!--chronométre-->
         <div class="compteur">
-            <div class="cadre" id="dizaine-minutes">1</div>
-            <div class="cadre" id="unite-minutes">2</div>
-            <div class="cadre">:</div>
-            <div class="cadre" id="dizaine-secondes">3</div> 
+            <div class="cadre" id="dizaine-minutes">2</div>
+            <div class="cadre" id="unite-minutes">5</div>
+            <div class="separateur">:</div>
+            <div class="cadre" id="dizaine-secondes">0</div> 
             <div class="cadre" id="unite-secondes">0</div> 
         </div>
             <!--Boutons-->
@@ -91,9 +96,9 @@
         </button>
     </div>
 
-</main>
+    </main>
   
-    
+    </div>
 
 
 
